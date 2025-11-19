@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "رِقّة",
+    "slug": "riqqah-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "riqqah",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ff6fb2"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.riqqah.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ff6fb2"
+      },
+      "package": "com.riqqah.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "السماح لتطبيق رِقّة بالوصول إلى صورك",
+          "cameraPermission": "السماح لتطبيق رِقّة باستخدام الكاميرا"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
